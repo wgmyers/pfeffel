@@ -3,13 +3,25 @@
 const pfeffel = function pfeffel() {
 
   const word_length = 5;
-  let guesses = 6;
+  let max_guesses = 6;
   const tries = [];
+  const words = [
+    "AWFUL", "BULLY", "CHEAT", "DRONE", "ERROR", "FRAUD", "GHOST", "HAVOC",
+    "IRATE", "JOKER", "KNAVE", "LYING", "MOOCH", "NASTY", "OPTIC", "POWER",
+    "QUACK", "ROGUE", "STEAL", "TRICK", "UNFIT", "VENAL", "WRONG"
+  ];
+  let guess;
+  let letter;
+  let word;
 
   function init() {
-    for(let i = 0; i < guesses; i++) {
+    for(let i = 0; i < max_guesses; i++) {
       tries.push(Array(word_length).fill(" "));
     }
+    guess = 1;
+    letter = 1;
+    word = words[Math.floor(Math.random() * words.length)];
+    console.log(`The word is ${word}`);
     draw_gameboard();
     draw_keyboard();
   }
@@ -20,7 +32,7 @@ const pfeffel = function pfeffel() {
       const guess_div = document.createElement("div");
       for (const letter of guess) {
         const letter_span = document.createElement("span");
-        letter_span.appendChild(document.createTextNode("\xa0\xa0"));
+        letter_span.appendChild(document.createTextNode("\xa0\xa0\xa0\xa0\xa0"));
         letter_span.classList.add("letter");
         guess_div.appendChild(letter_span);
       }
