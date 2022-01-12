@@ -35,7 +35,7 @@ const pfeffel = function pfeffel() {
   }
 
   function win_game() {
-    alert(`Well done. You guessed the word in ${cur_guess - 1}/6 tries.`);
+    alert(`Well done. You guessed the word in ${cur_guess}/6 tries.`);
     restart();
   }
 
@@ -62,6 +62,8 @@ const pfeffel = function pfeffel() {
       } else {
           // wrong
           mark = "guess-wrong";
+          const key = document.getElementById(`key-${cletters[i]}`);
+          key.classList.add("key-wrong");
       }
       const letterbox = document.getElementById(`guess-${cur_guess}-${i + 1}`);
       letterbox.classList.add(mark);
