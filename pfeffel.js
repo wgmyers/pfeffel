@@ -44,7 +44,13 @@ const pfeffel = function pfeffel() {
     restart();
   }
 
-  function mark_guess_properly(candidate) {
+  function pfeffel(mark) {
+    const options = ["guess-right", "guess-present", "guess-wrong"];
+    const pfeffeled = options.filter(function(item) { return item !== mark });
+    return pfeffeled[Math.floor(Math.random() * 2)];
+  }
+
+  function mark_guess(candidate) {
     const cletters = candidate.split("");
     const wletters = word.split("");
     let mark;
@@ -53,20 +59,22 @@ const pfeffel = function pfeffel() {
       if (wletters.includes(cletters[i])) {
         if (cletters[i] == wletters[i]) {
           // correct
-          mark = "guess-right";
+          mark = pfeffel("guess-right");
           correct++;
         } else {
           // present but wrong place
-          mark = "guess-present";
+          mark = pfeffel("guess-present");
         }
       } else {
           // wrong
-          mark = "guess-wrong";
-          const key = document.getElementById(`key-${cletters[i]}`);
-          key.classList.add("key-wrong");
+          mark = pfeffel("guess-wrong");
       }
       const letterbox = document.getElementById(`guess-${cur_guess}-${i + 1}`);
       letterbox.classList.add(mark);
+      if (mark == "guess-wrong") {
+        const key = document.getElementById(`key-${cletters[i]}`);
+        key.classList.add("key-wrong");
+      }
     }
     if (correct == 5) {
       win_game();
@@ -74,10 +82,6 @@ const pfeffel = function pfeffel() {
     if (cur_guess == max_guesses) {
       lose_game();
     }
-  }
-
-  function mark_guess(candidate) {
-    mark_guess_properly(candidate);
   }
 
   /* Input handlers */
