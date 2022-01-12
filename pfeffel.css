@@ -17,7 +17,7 @@ hr {
 /* Style whole page */
 #content {
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   margin: 0;
   padding: 0;
 }
@@ -87,4 +87,15 @@ hr {
 .keyrow {
   padding: 12px;
   margin: 6px;
+}
+
+/* Style credit */
+.credit {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.4em;
+  padding: 0;
+  margin: 0;
 }
