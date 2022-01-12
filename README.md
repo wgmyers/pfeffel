@@ -10,7 +10,7 @@ About everything.
 
 It's [https://www.conniptions.org/pfeffel/](here).
 
-NB: Not yet mobile friendly. I know. Working on it.
+I've tried to make it mobile friendly: if you have problems please let me know.
 
 ## What is this
 
