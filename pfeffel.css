@@ -67,6 +67,10 @@ hr {
   border-radius: 4px;
 }
 
+.key-wrong {
+  background-color: #787c7e;
+}
+
 .key:hover {
   background-color: #bbb;
   cursor: pointer;
