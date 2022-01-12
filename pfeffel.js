@@ -34,7 +34,7 @@ const pfeffel = function pfeffel() {
   }
 
   function win_game() {
-    alert(`Well done. You guessed the word in ${cur_guess}/6 tries.`);
+    alert(`Well done. You guessed the word in ${cur_guess}/6 tries.\nNo share button though. Tories don't share.`);
     restart();
   }
 
