@@ -26,20 +26,22 @@ hr {
 /* Style gameboard */
 
 #gameboard {
-  display: grid;
-  grid-gap: 0.5rem;
+  /* display: grid; */
+  /* grid-gap: 0.5rem; */
 }
 
 .letter {
+  display:inline-block;
+  width: 1.8vw;
   padding: 12px;
-  margin: 6px;
+  margin: 4px;
   border: 3px solid black;
   border-radius: 4px;
 }
 
 .guess {
-  padding: 12px;
-  margin: 6px;
+  padding: 6px;
+  margin: 0px;
 }
 
 .guess-wrong {
