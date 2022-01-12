@@ -1,6 +1,12 @@
+html {
+  background: url(images/boris2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 body {
    font-family: 'Noto Sans', sans-serif;
    font-size: 1.5em;
+
 }
 
 hr {
@@ -14,6 +20,7 @@ hr {
   height: 100vh;
   margin: 0;
   padding: 0;
+  opacity: 1;
 }
 
 /* Style gameboard */
@@ -26,7 +33,7 @@ hr {
 .letter {
   padding: 12px;
   margin: 6px;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 4px;
 }
 
