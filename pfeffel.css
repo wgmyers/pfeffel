@@ -1,0 +1,59 @@
+body {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 1.5em;
+}
+
+hr {
+  width: 33%;
+  border: 1px dotted grey;
+}
+
+/* Style whole page */
+#content {
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style gameboard */
+
+#gameboard {
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+.letter {
+  padding: 12px;
+  margin: 6px;
+
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.guess {
+  padding: 12px;
+  margin: 6px;
+}
+
+/* Style keyboard */
+#keyboard {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+}
+
+.key {
+  background-color: #ddd;
+  padding: 12px;
+  margin: 6px;
+  border-radius: 4px;
+}
+
+.keyrow {
+  padding: 12px;
+  margin: 6px;
+}
