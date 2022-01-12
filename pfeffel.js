@@ -23,7 +23,6 @@ const pfeffel = function pfeffel() {
     cur_guess = 1;
     cur_letter = 1;
     word = words[Math.floor(Math.random() * words.length)];
-    console.log(`The word is ${word}`);
     draw_gameboard();
     draw_keyboard();
   }
@@ -91,7 +90,6 @@ const pfeffel = function pfeffel() {
       return;
     }
     const id = `guess-${cur_guess}-${cur_letter}`;
-    console.log(`add_letter has ${id}`);
     const letterbox = document.getElementById(id);
     letterbox.innerHTML = `${letter}`;
     cur_letter++;
@@ -102,7 +100,6 @@ const pfeffel = function pfeffel() {
       return;
     }
     const id = `guess-${cur_guess}-${cur_letter - 1}`;
-    console.log(`delete_letter has ${id}`);
     const letterbox = document.getElementById(id);
     letterbox.innerHTML = `\xa0\xa0\xa0\xa0\xa0`;
     cur_letter--;
@@ -115,7 +112,6 @@ const pfeffel = function pfeffel() {
     let candidate = "";
     for (let i = 0; i < word_length; i++) {
       const id = `guess-${cur_guess}-${i + 1}`;
-      console.log(`submit_guess has ${id}`);
       candidate += document.getElementById(id).innerHTML;
     }
     mark_guess(candidate);
