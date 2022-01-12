@@ -53,6 +53,20 @@ hr {
   margin: 0px;
 }
 
+@media (max-width:1000px) {
+  .letter {
+    width: 6vw;
+    height: 6vh;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  .guess {
+    padding: 2px;
+  }
+}
+
 .guess-wrong {
   background-color: #787c7e;
   color: #fff;
@@ -99,6 +113,19 @@ hr {
   margin: 6px;
 }
 
+@media (max-width:1000px) {
+  .key {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  .keyrow {
+    padding: 6px;
+    margin: 2px;
+  }
+}
+
 /* Style credit */
 .credit {
   position: fixed;
@@ -108,4 +135,10 @@ hr {
   font-size: 0.4em;
   padding: 0;
   margin: 0;
+}
+
+@media(max-width:1000px) {
+  .credit {
+    display: none;
+  }
 }
