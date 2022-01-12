@@ -6,14 +6,36 @@ Constantly.
 
 About everything.
 
-## Try it
+Ok, not everything. It doesn't lie about whether you have won or lost the game,
+and it doesn't lie about what word it has chosen (see Absurdle below for that)
+but it does consistently lie about the letter placements.
 
-It's [https://www.conniptions.org/pfeffel/](here).
+Normal Wordle marks your guesses as 'green' for correct, 'grey' for incorrect,
+and 'sort of orangey brown' for a letter that is in the word but in the wrong
+place.
+
+Pfeffel could do this, but instead, will consistently lie about marks. So, if
+a letter is marked 'green' still you don't know whether or not it is in the
+word, but if it is, it isn't in that place.
+
+It's just about playable if you squint.
+
+## Can I try it?
+
+Yes. It's [https://www.conniptions.org/pfeffel/](here).
 
 I've tried to make it mobile friendly: if you have problems please let me know.
 
-## What is this
+## Sorry, what is this?
 
 This is a parody of the excellent word game [https://www.powerlanguage.co.uk/wordle/](Wordle).
 
 There are several other Wordle parodies, but this is mine.
+
+## I bet those are more fun
+
+They are, I agree. Here are a few of them:
+
+* [Sweardle](https://www.sweardle.com/) - A sweary variant
+* [Absurdle](https://qntm.org/files/wordle/index.html) - An adversarial variant
+* [Letterle](https://edjefferson.com/letterle/) - A minimalist variant
