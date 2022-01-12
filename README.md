@@ -22,13 +22,13 @@ It's just about playable if you squint.
 
 ## Can I try it?
 
-Yes. It's [https://www.conniptions.org/pfeffel/](here).
+Yes. It's [here](https://www.conniptions.org/pfeffel/).
 
 I've tried to make it mobile friendly: if you have problems please let me know.
 
 ## Sorry, what is this?
 
-This is a parody of the excellent word game [https://www.powerlanguage.co.uk/wordle/](Wordle).
+This is a parody of the excellent word game [Wordle](https://www.powerlanguage.co.uk/wordle/).
 
 There are several other Wordle parodies, but this is mine.
 
