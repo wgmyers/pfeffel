@@ -26,7 +26,6 @@ hr {
 .letter {
   padding: 12px;
   margin: 6px;
-
   border: 2px solid black;
   border-radius: 4px;
 }
@@ -34,6 +33,21 @@ hr {
 .guess {
   padding: 12px;
   margin: 6px;
+}
+
+.guess-wrong {
+  background-color: #787c7e;
+  color: #fff;
+}
+
+.guess-right {
+  background-color: #6aaa64;
+  color: #fff;
+}
+
+.guess-present {
+  background-color: #c9b458;
+  color: #fff;
 }
 
 /* Style keyboard */
@@ -51,6 +65,11 @@ hr {
   padding: 12px;
   margin: 6px;
   border-radius: 4px;
+}
+
+.key:hover {
+  background-color: #bbb;
+  cursor: pointer;
 }
 
 .keyrow {
