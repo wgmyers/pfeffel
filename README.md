@@ -30,7 +30,7 @@ I've tried to make it mobile friendly: if you have problems please let me know.
 
 This is a parody of the excellent word game [Wordle](https://www.powerlanguage.co.uk/wordle/).
 
-There are several other Wordle parodies, but this is mine.
+There are, by now, many many other Wordle parodies, but this is mine.
 
 ## I bet those are more fun
 
@@ -39,3 +39,9 @@ They are, I agree. Here are a few of them:
 * [Sweardle](https://www.sweardle.com/) - A sweary variant
 * [Absurdle](https://qntm.org/files/wordle/index.html) - An adversarial variant
 * [Letterle](https://edjefferson.com/letterle/) - A minimalist variant
+
+## I wonder if anyone has made a list of all the variants?
+
+Why yes, they have.
+
+It is [here](https://rwmpelstilzchen.gitlab.io/wordles/). Enjoy!
